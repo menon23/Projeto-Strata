@@ -7,19 +7,20 @@
         <meta name="author" content="Eduardo Menon">
         <meta name="description" content="descrição bacanuda">
         <meta name="keywords" content="html5, tecnologia">
-        
+        <!--Carregando os icones doFont Awesome styles -->
+        <script src="https://kit.fontawesome.com/1f693781da.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/estilo.css">
     </head>
     <body>
         
         <header class="main-header">
             <a href="index.html" class="main-header-link">
-                <img src="images/2.png" alt="Volta ao inicio do perfil">
+                <img src="images/avatar.jpg" alt="Volta ao inicio do perfil">
             </a>
             <h1>
-                Alguns projetos de<br>
+                Um pouco do que<br>
                 <strong>Eduardo Menon</strong>,<br> 
-                Analista de dados<br>
+                sabe fazer em web design<br>
                 Retirado de <a href="http://html5up.net">html5up.net</a>.
             </h1>            
         </header>
@@ -28,7 +29,7 @@
             
             <section class="main-content-section">
 
-                <h2>Quando o header é aside e o aside é no header</h2>
+                <h2>Menu principal na lateral</h2>
                 <p>Accumsan orci faucibus id e u lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
                 
                 <a href="#" title="Veja mais" class="button-default">Veja mais</a>
@@ -36,7 +37,7 @@
             </section>
 
             <section class="main-content-section"> 
-                <h3>Recent Works</h3>
+                <h3>Galeria de thumbs</h3>
                 <article class="recente-works-card">
                     <a href="images/fulls/01.jpg">
                         <img src="images/fulls/01.jpg"  title="descrição">
@@ -79,8 +80,8 @@
             </section>
 
             <section class="main-content-section">
-                <h3>Get in touch</h3>
-                <p>Um paragrafo para encher linguiça</p> 
+                <h3>Entre em contato</h3>
+                <p>Um paragrafo qualquer</p> 
 
                 <form action="#" method="post">
                     <label for="nome">Nome</label>
@@ -96,10 +97,247 @@
                 </form> 
                 <address>
                     <p>
-                        <span>Endereço</span>
+                        <span>Endereço:</span>
+                        Fake endereço S/n, Ponta Grossa, Paraná
+                    </p>
+                    <p>
+                        <span>Telefone:</span>
+                        (42)99902-5973
+                    </p>
+                    <p>
+                        <span>Email:</span>
+                        eduardomenon23@gmail.com
                     </p>
                 </address>
             </section>
+
+            <section class="main-content-section">
+                <h3>Elementos de um site</h3>
+                <h4>Textos</h4>
+                <p>
+                    Esse é um trecho em <b>negrito</b>, e este um trecho em <strong>strong</strong>.
+                </p>
+                <p>
+                    Agora um trecho em <i>itálico</i> e outro em <em>enfase</em>.
+                </p>
+                <p>
+                    Um texto <sup>sobre-escrito</sup> e outro <sub>sub-escrito</sub>.
+                </p>
+                <p>
+                    Algo <u>sublinhado</u> e um pedaço de código:
+                    <code>
+                        for (;;) {...}
+                    </code>
+                </p>
+                <p>E finalmente<a href "#">  um link</a>.</p>
+                <blockquote cite="http://developer.mozilla.org">
+                    <p>Esta é uma citação tirada da
+                    Mozilla Developer Center.</p>
+                </blockquote>
+                  
+                <p>According to Mozilla's website,
+                    <q
+                    cite="https://www.mozilla.org/en-US/about/history/details/">Firefox 1.0
+                    was released in 2004 and became a big success.</q>
+                </p>
+                  
+                <h4>Pré-formatado</h4>
+                <p>Usando um trecho de código</p>
+                <pre> 
+                    <code>
+      &lt;script&gt;
+          alert('oi');
+      &lt;/script&gt;
+                    </code>
+                </pre>
+                <h4>Listas</h4>
+
+                <h5>Não ordernada</h5>
+                <ul>
+                    <li>item1</li>
+                    <li>item2</li>
+                    <li>item3</li>
+                </ul>
+                <h5>Ordernada</h5>
+                    <ol>
+                        <li>item1</li>
+                        <li>item2</li>
+                        <li>item3</li>
+                    </ol>
+                
+                <h5>Alternada</h5>
+                    <ul class="ul-alternada">
+                        <li>item1</li>
+                        <li>item2</li>
+                        <li>item3</li>
+                    </ul>
+                  
+                <h5>Ícones</h5>
+                    <ul class="ul-icones">
+                        <li><i class="fa-brands fa-twitter-square fa-2xl"></i>Twitter</li>
+                        
+                        <li><i class="fa-brands fa-whatsapp-square fa-2xl"></i>Whatsapp</li>
+                    </ul>
+                <h4>Ações</h4>
+                <p>
+                    <a href="#" class="bt-padrao">Padrão</a>
+                    <a href="#" class="bt-padrao bt-padrao-vazado">Padrão</a>
+                </p>
+                <p>
+                    <a href="#" class="bt-padrao bt-p">Padrão</a>
+                    <a href="#" class="bt-padrao bt-p bt-padrao-vazado">Padrão</a>
+                </p>
+                <p>
+                    <a href="#" class="bt-padrao bt-g">Padrão</a>
+                    <a href="#" class="bt-padrao bt-g bt-padrao-vazado">Padrão</a>
+                </p>
+                <p>
+                    <a href="#" class="bt-padrao bt-p bt-g">Padrão</a>
+                    <a href="#" class="bt-padrao bt-p bt-g bt-padrao-vazado">Padrão</a>
+                </p>
+
+                <h4>Tabelas</h4>
+                <h5>Padrão</h5>
+                <table class="tabela">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Descrição</th>
+                            <th>Preço</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2"></td>
+                            <td>30.00</td>
+                        </tr>
+                    </tfoot>
+                    <tbdoy>
+                        <tr>
+                            <td>Item1</td>
+                            <td>Coca-Cola</td>
+                            <td>10.00</td>
+                        </tr>
+                        <tr>
+                            <td>Item2</td>
+                            <td>Guaraná</td>
+                            <td>10.00</td>
+                        </tr>
+                        <tr>
+                            <td>Item3</td>
+                            <td>Pepsi</td>
+                            <td>10.00</td>
+                        </tr>
+                    </tbdoy>
+                </table>
+                <h5>Alternada</h5>
+                <table class="tabela-alternada">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Descrição</th>
+                            <th>Preço</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2"></td>
+                            <td>30.00</td>
+                        </tr>
+                    </tfoot>
+                    <tbdoy>
+                        <tr>
+                            <td>Item1</td>
+                            <td>Coca-Cola</td>
+                            <td>10.00</td>
+                        </tr>
+                        <tr>
+                            <td>Item2</td>
+                            <td>Guaraná</td>
+                            <td>10.00</td>
+                        </tr>
+                        <tr>
+                            <td>Item3</td>
+                            <td>Pepsi</td>
+                            <td>10.00</td>
+                        </tr>
+                    </tbdoy>
+                </table>
+                <h4>Botões</h4>
+                <p>
+                    <button href="#" class="bt-padrao">Padrão</button>
+                    <button href="#" class="bt-padrao bt-padrao-vazado">Padrão</button>
+                </p>
+                <p>
+                    <button href="#" class="bt-padrao bt-p">Padrão</button>
+                    <button href="#" class="bt-padrao bt-p bt-padrao-vazado">Padrão</button>
+       
+       
+       
+       
+                </p>
+                <p>
+                    <button href="#" class="bt-padrao bt-g">Padrão</button>
+                    <button href="#" class="bt-padrao bt-g bt-padrao-vazado">Padrão</button>
+                </p>
+                <p>
+                    <button href="#" class="bt-padrao bt-p bt-g">Padrão</button>
+                    <button href="#" class="bt-padrao bt-p bt-g bt-padrao-vazado">Padrão</button>
+                </p>
+                <h4>Formulários</h4>
+                
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+
+                <label for="email">Nome</label>
+                <input type="email" name="email" id="email">
+
+                <select>
+                    <option value="0">Selecione...</option>
+                    <option value="1">Html</option>
+                    <option value="2">Css</option>
+                    <option value="3">Javascript</option>
+                </select>
+                <label><input type="radio" value="baixa" name="prioridade">Baixa prioridade</label>
+                <label><input type="radio" value="media" name="prioridade">Média prioridade</label>
+                <label><input type="radio" value="alta" name="prioridade">Alta prioridade</label>
+                
+                <label><input type="checkbox" name="copy" value="1">Envie-me uma cópia</label>
+                <label><input type="checkbox" name="human" value="1">Sou humano</label>
+                
+                <label for="msg">Mensagem</label>
+                <textarea placeholder="Digite uma mensagem" id="msg"></textarea>
+
+                <input type="submit" class="bt-padrao" value="Enviar">
+                <input type="submit" class="bt-padrao-vazado" value="Limpar">
+
+            </section>
+            <section class="main-content-section">
+                <h3>Imagens</h3>
+                <div class="gallery-img">
+                    <img src="images/fulls/01.jpg" alt="">
+                </div>
+                <div class="gallery-thumb">
+                    <img src="images/fulls/01.jpg" alt="">
+                    <img src="images/fulls/02.jpg" alt="">
+                    <img src="images/fulls/03.jpg" alt="">
+                    <img src="images/fulls/04.jpg" alt="">
+                    <img src="images/fulls/05.jpg" alt="">
+                    <img src="images/fulls/06.jpg" alt="">
+                    <img src="images/fulls/07.jpg" alt="">
+                    <img src="images/fulls/08.jpg" alt="">
+                    <img src="images/fulls/09.jpg" alt="">
+                </div>
+
+                <h4>Logo à esquerda &amp; direita </h4>
+                <p><img src="images/avatar.jpg" class="img-left"> ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum autem expedita, illum maiores nam reprehenderit commodi cumque aspernatur nesciunt neque! Quis earum quod accusamus ab nesciunt quae perspiciatis architecto exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, nulla? Pariatur voluptatum provident sint, quam mollitia incidunt, repellendus laborum debitis quisquam accusamus tempora maiores, error ducimus blanditiis sunt perspiciatis. Tempora. adipisicing elit. Vero quasi maiores sapiente, voluptas odio magni, harum quia quisquam obcaecati iste officiis architecto cum cumque. Sit placeat quae cumque tempora possimus.</p>
+                <p><img src="images/avatar.jpg" class="img-right">Lorem, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et beatae consequatur est soluta mollitia saepe sunt quo nam culpa, deserunt eos recusandae animi, tempore ipsa aliquid molestias error aut nostrum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque odit blanditiis ratione error quos tempore iusto nam, animi voluptates ullam quaerat delectus. Exercitationem nulla temporibus laudantium qui consequuntur repellat aliquam? ipsum dolor sit amet consectetur adipisicing elit. Dolorem saepe veritatis veniam harum! At doloribus, mollitia nulla culpa numquam eveniet soluta accusamus praesentium sed voluptatem suscipit atque, recusandae molestias laudantium!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi a iure aut debitis architecto asperiores laudantium! Veniam sed eveniet perferendis ab, sit, ratione facilis rem distinctio voluptatibus placeat optio sequi.</p>
+
+
+            </section>
+
+
             
         </main>
         <footer class="main-footer"></footer>
