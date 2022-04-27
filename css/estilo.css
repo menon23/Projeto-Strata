@@ -1,0 +1,238 @@
+body{
+    font-family: 'Source Sans Pro', helvetica, sans-serif;
+    color: #666;
+    line-height: 2;
+}
+a{
+    transition: color .2s linear, border .2s linear;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+    color: #49bf9d;
+}
+a:hover{
+    border-bottom-color: transparent;
+}
+
+p{
+    margin: 0 0 2em;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #787878;
+    font-weight: normal;
+    margin: 1em 0;
+}
+
+h1{
+    font-size: 36px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+h3{
+    font-size: 26px;
+}
+
+h4{
+    font-size: 22px;
+}
+
+h5{
+    font-size: 18px;
+}
+
+h6{
+    font-size: 16px;
+}
+sub, sup{
+    font-size: 12px;
+}
+blockquote{
+    border-left: 5px solid #efefef;
+    margin: 2em 0;
+    padding:  .5em 0 .5em 1.5em;
+}
+
+code{
+    background-color: #f7f7f7;
+    border-radius: .35em;
+    border: 2px solid #efefef;
+    font-size: 0.9em;
+    padding: 0.25em 0.5em;
+    font-family: 'Courier New', monospace;
+    color: #929292;
+
+}
+pre code{
+    display: block;
+}
+
+ul, ol{
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+    padding-left: 1.1em;
+}
+li{
+    padding-left: .6em;
+}
+
+.ul-alternada{
+    list-style-type: none;
+    padding-left: 0;
+}
+.ul-alternada li {
+    border-bottom: 2px solid rgb(229, 228, 228);
+}
+.ul-alternada li:last-child{
+    border: 0;
+}
+.ul-icones{
+    list-style-type: none;
+    padding-left: 0;
+}
+.ul-icones li{
+    display: inline-block;
+    color: #49bf9d;
+}
+input, label, textarea{
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+input, textarea{
+    background: rgb(244, 243, 243);
+    padding: 15px;
+    border-radius: 5px;
+    border: solid 2.5px transparent;
+    margin-bottom: 10px;
+}
+input:focus, textarea:focus{
+    border: solid 2.5px #49bf9d;
+    outline: none;
+}
+textarea{
+    height: 10em;
+}
+.menu-principal{
+    position: fixed;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 35%;
+    background-color: aqua;
+    padding: 124px 72px 72px 54px;
+    box-sizing: border-box;
+    background-image: url(../images/overlay.png), url(../images/bg.jpg);
+    background-position: left top;
+    background-size: auto, cover;
+    text-align: right;
+
+}
+.menu-h1{
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: rgba(255,255, 255,.5);
+    
+}
+.menu-h1 strong{
+    color:white;
+    font-weight: normal;
+}
+.menu-link{
+    color: inherit;
+}
+.menu-link:hover{
+    color: #49bf9d;
+}
+
+.conteudo-principal{
+    width: 67%;
+    margin-left: 33%;
+    padding: 124px 72px 72px 54px;
+    box-sizing: border-box;
+}
+/*Grid*/
+.row{
+    overflow: auto;
+}
+.col-2{
+    width: 48%;
+    float: left;
+}
+.col-2:first-child{
+    margin-right: 2%;
+}
+.col-2:last-child{
+    margin-left: 2%;
+}
+.col2-3{
+    width: 65%;
+    float: left;
+    
+}
+.col1-3{
+    width: 32%;
+    margin-left: 3%;
+    float:left;
+}
+/*botões*/
+.bt-padrao{
+    background-color: #49bf9d;
+    border: 2px solid #49bf9d;
+    color: white;
+    padding: .75em 1.5em;
+    border-radius: 5px;
+    font-size: .8em;
+    text-align: center;
+    display: inline-block;
+    width: auto;
+}
+.bt-padrao-vazado{
+    background-color: white;
+    border-color: #efefef;
+    color: inherit; 
+}
+.bt-p{
+    font-size: 0.6em;
+}
+.bt-g{
+    display: block;
+    text-align: center;
+}
+.bt-gg{
+    font-size: 1em;
+    padding: 10px 30px;
+}
+/*Tabelas*/
+.tabela{
+    width: 100%;
+    margin: 0 0 2em 0;
+    border-collapse: collapse;
+    text-align: left;
+}
+.tabela td{
+    padding: .75em;
+}
+.tabela th{
+    background:#ccc ;
+    padding: .75em;
+}
+.tabela tbody tr td{
+    border-bottom: 1px solid #666;
+}
+.tabela tbody tr:first-child td{
+    border-top:2px solid #666;
+}
+.tabela tbody tr:last-child td{
+    border-bottom:2px solid #666;
+}
+.tabela tbody tr:nth-child(even) td{
+    background: rgb(234, 233, 233);
+}
+.tabela-alternada tbody td, .tabela-alternada tbody tr:first-child td, .tabela-alternada tbody tr:first-child td{
+    border: 1px solid #ddd;
+}

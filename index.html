@@ -9,34 +9,41 @@
         <meta name="keywords" content="html5, tecnologia">
         <!--Carregando os icones doFont Awesome styles -->
         <script src="https://kit.fontawesome.com/1f693781da.js" crossorigin="anonymous"></script>
+        <!--reset no css padrão dos navegadores-->
+        <link rel="stylesheet" href="css/normalize.css">
+        <!--importanto fonte do google-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <!--Css padrao-->
         <link rel="stylesheet" href="css/estilo.css">
     </head>
     <body>
         
-        <header class="main-header">
+        <header class="menu-principal">
             <a href="index.html" class="main-header-link">
                 <img src="images/avatar.jpg" alt="Volta ao inicio do perfil">
             </a>
-            <h1>
+            <h1 class="menu-h1">
                 Um pouco do que<br>
                 <strong>Eduardo Menon</strong>,<br> 
                 sabe fazer em web design<br>
-                Retirado de <a href="http://html5up.net">html5up.net</a>.
+                Retirado de <a href="http://html5up.net" class="menu-link">html5up.net</a>.
             </h1>            
         </header>
         
-        <main class=main-content>
+        <main class="conteudo-principal">
             
-            <section class="main-content-section">
+            <section class="secao-conteudo">
 
-                <h2>Menu principal na lateral</h2>
+                <h2>Título do site</h2>
                 <p>Accumsan orci faucibus id e u lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
                 
-                <a href="#" title="Veja mais" class="button-default">Veja mais</a>
+                <a href="#" title="Veja mais" class="bt-padrao">Veja mais</a>
                 
             </section>
 
-            <section class="main-content-section"> 
+            <section class="secao-conteudo"> 
                 <h3>Galeria de thumbs</h3>
                 <article class="recente-works-card">
                     <a href="images/fulls/01.jpg">
@@ -76,42 +83,57 @@
                     <p class="recent-works-card-title">Lorem qq coisa que possa mudar o mundo</p>
                 </article> 
 
-                <a href="#" title="Veja mais" class="buttom-default">Veja o Portfolio Completo</a>
+                <a href="#" title="Veja mais" class="bt-padrao">Veja o Portfolio Completo</a>
             </section>
 
-            <section class="main-content-section">
+            <section class="secao-conteudo">
                 <h3>Entre em contato</h3>
                 <p>Um paragrafo qualquer</p> 
+                
+                <div class="row">
+                    <div class="col2-3">
+                        <form action="#" method="post">
+                            <div class="row">
+                                <div class="col-2">
+                                    <label for="nome">Nome</label>
+                                    <input type="text" name="nome" id="nome" placeholder="Nome Completo">
+                                </div>
+                            
+                                <div class="col-2">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email" placeholder="exemplo@email.com">
+                                </div>
+                            </div>    
+                        <label for="mensagem">Digite sua mensagem</label>
+                        <textarea name="mensagem " id="mensagem"></textarea>
 
-                <form action="#" method="post">
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome">
+                        <input type="submit" value="Enviar" class="bt-padrao-vazado bt-padrao bt-gg">
+                    </form> 
+                    </div>
 
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
 
-                    <label for="mensagem">Digite sua mensagem</label>
-                    <textarea name="mensagem " id="mensagem"></textarea>
 
-                    <input type="submit" value="Enviar">
-                </form> 
-                <address>
-                    <p>
-                        <span>Endereço:</span>
-                        Fake endereço S/n, Ponta Grossa, Paraná
-                    </p>
-                    <p>
-                        <span>Telefone:</span>
-                        (42)99902-5973
-                    </p>
-                    <p>
-                        <span>Email:</span>
-                        eduardomenon23@gmail.com
-                    </p>
-                </address>
+                    <div class="col1-3">
+                        <address>
+                            <p>
+                                <span><i class="fa-solid fa-location-dot"></i>Endereço:</span>
+                                Fake endereço S/n, Ponta Grossa, Paraná
+                            </p>
+                            <p>
+                                <span><i class="fa-solid fa-phone"></i>Telefone:</span>
+                                (42)99902-5973
+                            </p>
+                            <p>
+                                <span><i class="fa-solid fa-at"></i>Email:</span>
+                                eduardomenon23@gmail.com
+                            </p>
+                        </address>
+                    </div>
+                </div>
+                
             </section>
 
-            <section class="main-content-section">
+            <section class="secao-conteudo">
                 <h3>Elementos de um site</h3>
                 <h4>Textos</h4>
                 <p>
@@ -130,11 +152,12 @@
                     </code>
                 </p>
                 <p>E finalmente<a href "#">  um link</a>.</p>
+
+                <h4>Blockquote</h4>
                 <blockquote cite="http://developer.mozilla.org">
-                    <p>Esta é uma citação tirada da
-                    Mozilla Developer Center.</p>
+                    Esta é uma citação tirada da Mozilla Developer Center.
                 </blockquote>
-                  
+                <h4>Citação</h4>  
                 <p>According to Mozilla's website,
                     <q
                     cite="https://www.mozilla.org/en-US/about/history/details/">Firefox 1.0
@@ -143,58 +166,69 @@
                   
                 <h4>Pré-formatado</h4>
                 <p>Usando um trecho de código</p>
-                <pre> 
-                    <code>
-      &lt;script&gt;
-          alert('oi');
-      &lt;/script&gt;
-                    </code>
-                </pre>
+                <div class="row">
+                    <div class="col-2">
+                        <pre><code>
+    &lt;script&gt;
+    alert('oi');
+    &lt;/script&gt;
+                        </code></pre>
+                    </div>
+                </div>
                 <h4>Listas</h4>
-
-                <h5>Não ordernada</h5>
-                <ul>
-                    <li>item1</li>
-                    <li>item2</li>
-                    <li>item3</li>
-                </ul>
-                <h5>Ordernada</h5>
-                    <ol>
-                        <li>item1</li>
-                        <li>item2</li>
-                        <li>item3</li>
-                    </ol>
-                
-                <h5>Alternada</h5>
-                    <ul class="ul-alternada">
-                        <li>item1</li>
-                        <li>item2</li>
-                        <li>item3</li>
-                    </ul>
-                  
-                <h5>Ícones</h5>
-                    <ul class="ul-icones">
-                        <li><i class="fa-brands fa-twitter-square fa-2xl"></i>Twitter</li>
+                <div class="row">
+                    <div class="col-2">
+                        <h5>Não ordernada</h5>
+                        <ul>
+                            <li>item1</li>
+                            <li>item2</li>
+                            <li>item3</li>
+                        </ul>
+                        <h5>Ordernada</h5>
+                            <ol>
+                                <li>item1</li>
+                                <li>item2</li>
+                                <li>item3</li>
+                            </ol>
+                    </div>
+                    <div class="col-2">    
+                        <h5>Alternada</h5>
+                            <ul class="ul-alternada">
+                                <li>item1</li>
+                                <li>item2</li>
+                                <li>item3</li>
+                            </ul>
                         
-                        <li><i class="fa-brands fa-whatsapp-square fa-2xl"></i>Whatsapp</li>
-                    </ul>
+                        <h5>Ícones</h5>
+                            <ul class="ul-icones">
+                                <li><i class="fa-brands fa-twitter-square fa-2xl"></i>Twitter</li>
+                                <li><i class="fa-brands fa-whatsapp-square fa-2xl"></i>Whatsapp</li>
+                            </ul>
+                        </div>
+                </div>    
                 <h4>Ações</h4>
-                <p>
-                    <a href="#" class="bt-padrao">Padrão</a>
-                    <a href="#" class="bt-padrao bt-padrao-vazado">Padrão</a>
-                </p>
-                <p>
-                    <a href="#" class="bt-padrao bt-p">Padrão</a>
-                    <a href="#" class="bt-padrao bt-p bt-padrao-vazado">Padrão</a>
-                </p>
-                <p>
-                    <a href="#" class="bt-padrao bt-g">Padrão</a>
-                    <a href="#" class="bt-padrao bt-g bt-padrao-vazado">Padrão</a>
-                </p>
-                <p>
-                    <a href="#" class="bt-padrao bt-p bt-g">Padrão</a>
-                    <a href="#" class="bt-padrao bt-p bt-g bt-padrao-vazado">Padrão</a>
-                </p>
+                <div class="row">
+                    <div class="col-2">
+                        <p>
+                            <a href="#" class="bt-padrao">Padrão</a>
+                            <a href="#" class="bt-padrao bt-padrao-vazado">Padrão</a>
+                        </p>
+                        <p>
+                            <a href="#" class="bt-padrao bt-p">Padrão</a>
+                            <a href="#" class="bt-padrao bt-p bt-padrao-vazado">Padrão</a>
+                        </p>
+                    </div><!--col-2-->
+                    <div class="col-2">   
+                        <p>
+                            <a href="#" class="bt-padrao bt-g">Padrão</a>
+                            <a href="#" class="bt-padrao bt-g bt-padrao-vazado">Padrão</a>
+                        </p>
+                        <p>
+                            <a href="#" class="bt-padrao bt-p bt-g">Padrão</a>
+                            <a href="#" class="bt-padrao bt-p bt-g bt-padrao-vazado">Padrão</a>
+                        </p>
+                    </div><!--col-2-->
+                </div><!--row-->
 
                 <h4>Tabelas</h4>
                 <h5>Padrão</h5>
@@ -231,7 +265,7 @@
                     </tbdoy>
                 </table>
                 <h5>Alternada</h5>
-                <table class="tabela-alternada">
+                <table class="tabela tabela-alternada">
                     <thead>
                         <tr>
                             <th>Nome</th>
@@ -245,7 +279,7 @@
                             <td>30.00</td>
                         </tr>
                     </tfoot>
-                    <tbdoy>
+                    <tbody>
                         <tr>
                             <td>Item1</td>
                             <td>Coca-Cola</td>
@@ -261,7 +295,7 @@
                             <td>Pepsi</td>
                             <td>10.00</td>
                         </tr>
-                    </tbdoy>
+                    </tbody>
                 </table>
                 <h4>Botões</h4>
                 <p>
@@ -312,7 +346,7 @@
                 <input type="submit" class="bt-padrao-vazado" value="Limpar">
 
             </section>
-            <section class="main-content-section">
+            <section class="secao-conteudo">
                 <h3>Imagens</h3>
                 <div class="gallery-img">
                     <img src="images/fulls/01.jpg" alt="">
