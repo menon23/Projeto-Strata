@@ -17,18 +17,19 @@
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
         <!--Css padrao-->
         <link rel="stylesheet" href="css/estilo.css">
+        
     </head>
     <body>
         
         <header class="menu-principal">
-            <a href="index.html" class="main-header-link">
+            <a href="index.html" class="main-header-link imagem-link">
                 <img src="images/avatar.jpg" alt="Volta ao inicio do perfil">
             </a>
             <h1 class="menu-h1">
                 Um pouco do que<br>
                 <strong>Eduardo Menon</strong>,<br> 
                 sabe fazer em web design<br>
-                Retirado de <a href="http://html5up.net" class="menu-link">html5up.net</a>.
+                
             </h1>            
         </header>
         
@@ -39,49 +40,55 @@
                 <h2>Título do site</h2>
                 <p>Accumsan orci faucibus id e u lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
                 
-                <a href="#" title="Veja mais" class="bt-padrao">Veja mais</a>
+                <a href="#" title="Veja mais" class="bt-padrao bt-gg">Veja mais</a>
                 
             </section>
 
             <section class="secao-conteudo"> 
                 <h3>Galeria de thumbs</h3>
-                <article class="recente-works-card">
-                    <a href="images/fulls/01.jpg">
-                        <img src="images/fulls/01.jpg"  title="descrição">
-                    </a>
-                    <p class="recent-works-card-title">Lorem qq coisa que possa mudar o mundo</p>
-                </article>
-                <article class="recente-works-card">
-                    <a href="images/fulls/02.jpg">
-                        <img src="images/fulls/02.jpg"  title="descrição">
-                    </a>
-                    <p class="recent-works-card-title">Lorem qq coisa que possa mudar o mundo</p>
-                </article> 
-                <article class="recente-works-card">
-                    <a href="images/fulls/03.jpg">
-                        <img src="images/fulls/03.jpg"  title="descrição">
-                    </a>
-                    <p class="recent-works-card-title">Lorem qq coisa que possa mudar o mundo</p>
-                </article> 
+                <div class="row">
+                    <div class="col-2">
                 
-                <article class="recente-works-card">
-                    <a href="images/fulls/04.jpg">
-                        <img src="images/fulls/04.jpg"  title="descrição">
-                    </a>
-                    <p class="recent-works-card-title">Lorem qq coisa que possa mudar o mundo</p>
-                </article>  
-                <article class="recente-works-card">
-                    <a href="images/fulls/05.jpg">
-                        <img src="images/fulls/05.jpg"  title="descrição">
-                    </a>
-                    <p class="recent-works-card-title">Lorem qq coisa que possa mudar o mundo</p>
-                </article> 
-                <article class="recente-works-card">
-                    <a href="images/fulls/06.jpg">
-                        <img src="images/fulls/06.jpg"  title="descrição">
-                    </a>
-                    <p class="recent-works-card-title">Lorem qq coisa que possa mudar o mundo</p>
-                </article> 
+                        <article class="recente-works-card">
+                            <a class="imagem-link" href="images/fulls/01.jpg">
+                                <img src="images/fulls/01.jpg"  alt="descrição">
+                            </a>
+                            <p class="recent-works-card-title">Lorem qq coisa que possa mudar o mundo</p>
+                        </article>
+                        <article class="recente-works-card">
+                            <a class="imagem-link" href="images/fulls/02.jpg">
+                                <img src="images/fulls/02.jpg"  alt="descrição">
+                            </a>
+                            <p class="recent-works-card-title">Lorem qq coisa que possa mudar o mundo</p>
+                        </article> 
+                        <article class="recente-works-card">
+                            <a class="imagem-link" href="images/fulls/03.jpg">
+                                <img src="images/fulls/03.jpg"  alt="descrição">
+                            </a>
+                            <p class="recent-works-card-title">Lorem qq coisa que possa mudar o mundo</p>
+                        </article> 
+                    </div>
+                    <div class="col-2">
+                        <article class="recente-works-card">
+                            <a class="imagem-link" href="images/fulls/04.jpg">
+                                <img src="images/fulls/04.jpg"  alt="descrição">
+                            </a>
+                            <p class="recent-works-card-title">Lorem qq coisa que possa mudar o mundo</p>
+                        </article>  
+                        <article class="recente-works-card">
+                            <a class="imagem-link" href="images/fulls/05.jpg">
+                                <img src="images/fulls/05.jpg"  alt="descrição">
+                            </a>
+                            <p class="recent-works-card-title">Lorem qq coisa que possa mudar o mundo</p>
+                        </article> 
+                        <article class="recente-works-card">
+                            <a class="imagem-link" href="images/fulls/06.jpg">
+                                <img src="images/fulls/06.jpg"  alt="descrição">
+                            </a>
+                            <p class="recent-works-card-title">Lorem qq coisa que possa mudar o mundo</p>
+                        </article>
+                    </div> 
+                </div>
 
                 <a href="#" title="Veja mais" class="bt-padrao">Veja o Portfolio Completo</a>
             </section>
@@ -116,16 +123,20 @@
                     <div class="col1-3">
                         <address>
                             <p>
-                                <span><i class="fa-solid fa-location-dot"></i>Endereço:</span>
+                                <span class="hidden"></i>Endereço:</span><i class="fa-solid fa-house fa-xl"></i>
                                 Fake endereço S/n, Ponta Grossa, Paraná
                             </p>
                             <p>
-                                <span><i class="fa-solid fa-phone"></i>Telefone:</span>
+                                <span class="hidden"></i>Telefone:</span><i class="fa-brands fa-whatsapp-square fa-xl"></i>
                                 (42)99902-5973
                             </p>
                             <p>
-                                <span><i class="fa-solid fa-at"></i>Email:</span>
+                                <span class="hidden"></i>Email:</span><i class="fa-solid fa-envelope fa-xl"></i>
                                 eduardomenon23@gmail.com
+                            </p>
+                            <p>
+                                <span class="hidden"></span><i class="fa-brands fa-github fa-2xl fa-xl"></i>
+                                https://github.com/menon23
                             </p>
                         </address>
                     </div>
@@ -319,48 +330,48 @@
                     <button href="#" class="bt-padrao bt-p bt-g bt-padrao-vazado">Padrão</button>
                 </p>
                 <h4>Formulários</h4>
-                
-                <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome">
+                <form action="#" method="post">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome">
 
-                <label for="email">Nome</label>
-                <input type="email" name="email" id="email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
 
-                <select>
-                    <option value="0">Selecione...</option>
-                    <option value="1">Html</option>
-                    <option value="2">Css</option>
-                    <option value="3">Javascript</option>
-                </select>
-                <label><input type="radio" value="baixa" name="prioridade">Baixa prioridade</label>
-                <label><input type="radio" value="media" name="prioridade">Média prioridade</label>
-                <label><input type="radio" value="alta" name="prioridade">Alta prioridade</label>
-                
-                <label><input type="checkbox" name="copy" value="1">Envie-me uma cópia</label>
-                <label><input type="checkbox" name="human" value="1">Sou humano</label>
-                
-                <label for="msg">Mensagem</label>
-                <textarea placeholder="Digite uma mensagem" id="msg"></textarea>
+                    <select>
+                        <option value="0">Selecione...</option>
+                        <option value="1">Html</option>
+                        <option value="2">Css</option>
+                        <option value="3">Javascript</option>
+                    </select>
+                    <label class="bt-personalizado"><input type="radio" value="baixa" name="prioridade">Baixa prioridade</label>
+                    <label class="bt-personalizado"><input type="radio" value="media" name="prioridade">Média prioridade</label>
+                    <label class="bt-personalizado"><input type="radio" value="alta" name="prioridade">Alta prioridade</label>
+                    
+                    <label class="bt-personalizado"><input type="checkbox" name="copy" value="1">Envie-me uma cópia</label>
+                    <label class="bt-personalizado"><input type="checkbox" name="human" value="1">Sou humano</label>
+                    
+                    <label for="msg">Mensagem</label>
+                    <textarea placeholder="Digite uma mensagem" id="msg"></textarea>
 
-                <input type="submit" class="bt-padrao" value="Enviar">
-                <input type="submit" class="bt-padrao-vazado" value="Limpar">
-
+                    <input type="submit" class="bt-padrao bt-gg" value="Enviar">
+                    <input type="submit" class="bt-padrao bt-gg bt-padrao-vazado" value="Limpar">
+                </form>
             </section>
             <section class="secao-conteudo">
                 <h3>Imagens</h3>
                 <div class="gallery-img">
                     <img src="images/fulls/01.jpg" alt="">
                 </div>
-                <div class="gallery-thumb">
-                    <img src="images/fulls/01.jpg" alt="">
-                    <img src="images/fulls/02.jpg" alt="">
-                    <img src="images/fulls/03.jpg" alt="">
-                    <img src="images/fulls/04.jpg" alt="">
-                    <img src="images/fulls/05.jpg" alt="">
-                    <img src="images/fulls/06.jpg" alt="">
-                    <img src="images/fulls/07.jpg" alt="">
-                    <img src="images/fulls/08.jpg" alt="">
-                    <img src="images/fulls/09.jpg" alt="">
+                <div class="gallery-thumb row">
+                    <img class="col1-3" src="images/fulls/01.jpg" alt="">
+                    <img class="col1-3" src="images/fulls/02.jpg" alt="">
+                    <img class="col1-3" src="images/fulls/03.jpg" alt="">
+                    <img class="col1-3" src="images/fulls/04.jpg" alt="">
+                    <img class="col1-3" src="images/fulls/05.jpg" alt="">
+                    <img class="col1-3" src="images/fulls/06.jpg" alt="">
+                    <img class="col1-3" src="images/fulls/03.jpg" alt="">
+                    <img class="col1-3" src="images/fulls/02.jpg" alt="">
+                    <img class="col1-3" src="images/fulls/01.jpg" alt="">
                 </div>
 
                 <h4>Logo à esquerda &amp; direita </h4>
@@ -374,7 +385,15 @@
 
             
         </main>
-        <footer class="main-footer"></footer>
+        <footer class="main-footer">
+            <ul class="ul-icones">
+                <li><i class="fa-brands fa-github fa-2xl"></i><a href="https://github.com/menon23" class="icone-link"> Github</a></li>
+               </ul>
+            <ul class="copyright">
+                <li></li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </footer>
+
         
     </body>
 </html>

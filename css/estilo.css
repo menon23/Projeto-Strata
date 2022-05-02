@@ -12,6 +12,9 @@ a{
 a:hover{
     border-bottom-color: transparent;
 }
+img{
+    max-width: 100%;
+}
 
 p{
     margin: 0 0 2em;
@@ -78,6 +81,10 @@ ul, ol{
 li{
     padding-left: .6em;
 }
+*:before,
+*:after {
+  box-sizing: border-box;
+}
 
 .ul-alternada{
     list-style-type: none;
@@ -102,12 +109,15 @@ input, label, textarea{
     width: 100%;
     box-sizing: border-box;
 }
-input, textarea{
+input, textarea, select{
     background: rgb(244, 243, 243);
     padding: 15px;
     border-radius: 5px;
     border: solid 2.5px transparent;
     margin-bottom: 10px;
+}
+input[type="radio"], input[type="checkbox"]{
+    width: auto     ;
 }
 input:focus, textarea:focus{
     border: solid 2.5px #49bf9d;
@@ -116,6 +126,7 @@ input:focus, textarea:focus{
 textarea{
     height: 10em;
 }
+
 .menu-principal{
     position: fixed;
     top: 0;
@@ -155,6 +166,13 @@ textarea{
     padding: 124px 72px 72px 54px;
     box-sizing: border-box;
 }
+.recente-works-card img{
+    border-radius: 10px;
+}
+.main-header-link img{
+    border-radius: 50%;
+    overflow: hidden;
+}
 /*Grid*/
 .row{
     overflow: auto;
@@ -176,13 +194,44 @@ textarea{
 }
 .col1-3{
     width: 32%;
-    margin-left: 3%;
     float:left;
+}
+.col1-3:nth-child(3n - 2){
+    margin-right:  2%;
+}
+.col1-3:nth-child(3n){
+    margin-left:  2%;
+}
+.col2-3 + .col1-3,.col1-3 + .col2-3{
+    margin-left: 2%;
+}
+
+/*imagens*/
+.imagem-link{
+    border: 0;
+}
+.gallery-img img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.gallery-thumb img, .gallery-img img{
+    margin-bottom: 2%;
+    border-radius: 5px;
+    display: inline-block;
+}
+.img-right{
+    float:right;
+    border-radius: 10px;
+}
+.img-left{
+    float:left;
+    border-radius: 10px;
 }
 /*botões*/
 .bt-padrao{
     background-color: #49bf9d;
-    border: 2px solid #49bf9d;
+    border: 3px solid #49bf9d;
     color: white;
     padding: .75em 1.5em;
     border-radius: 5px;
@@ -190,11 +239,23 @@ textarea{
     text-align: center;
     display: inline-block;
     width: auto;
+    transition: all .5s;
+    cursor: pointer;
+}
+.bt-padrao:hover{
+    background-color: #4fd2ad;
+    border-color: transparent;
 }
 .bt-padrao-vazado{
     background-color: white;
     border-color: #efefef;
     color: inherit; 
+    transition: all .5s;
+}
+.bt-padrao-vazado:hover{
+    color: #49bf9d;
+    border-color: #49bf9d;
+    background-color: white;
 }
 .bt-p{
     font-size: 0.6em;
@@ -207,6 +268,7 @@ textarea{
     font-size: 1em;
     padding: 10px 30px;
 }
+
 /*Tabelas*/
 .tabela{
     width: 100%;
@@ -222,17 +284,105 @@ textarea{
     padding: .75em;
 }
 .tabela tbody tr td{
-    border-bottom: 1px solid #666;
+    border-bottom: 1px solid #ddd;
 }
 .tabela tbody tr:first-child td{
-    border-top:2px solid #666;
+    border-top:1px solid #ddd;
 }
 .tabela tbody tr:last-child td{
-    border-bottom:2px solid #666;
+    border-bottom:1px solid #ddd;
 }
 .tabela tbody tr:nth-child(even) td{
     background: rgb(234, 233, 233);
 }
-.tabela-alternada tbody td, .tabela-alternada tbody tr:first-child td, .tabela-alternada tbody tr:first-child td{
+.tabela-alternada tbody td, .tabela-alternada tbody tr:first-child td, .tabela-alternada tbody tr:last-child td{
     border: 1px solid #ddd;
 }
+/*Footer*/
+.main-footer{
+    position: fixed;
+    bottom: 0;
+    width: 35%;
+    left: 0;
+    padding: 0 72px 72px 0;
+    box-sizing: border-box;
+    text-align: right;
+    color: #ccc;
+    transition: .2s;
+}
+.main-footer li{
+    list-style: none;
+}
+.main-footer a{
+    color: rgba(255,255, 255,.5);
+}
+.main-footer i{
+    color: rgba(255,255, 255,.5);
+}
+.main-footer a:hover{
+    color: #49bf9d;
+}
+.hidden{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    display: block;
+}
+/*personalizando radio e checkbox*/
+.bt-personalizado{
+    line-height: 1.1;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.8em;
+}
+  /*Disntancia entre 2botões*/
+  .bt-personalizado + .bt-personalizado{
+    margin-top: 0.5em;
+  }
+  /* escondendo o original */
+  input[type="checkbox"], input[type="radio"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    background-color: rgb(244, 243, 243);
+    /* Not removed via appearance */
+    margin: 0;
+    
+    font: inherit;
+    width: 1.5em;
+    height: 1.5em;
+    border: 2px solid rgb(244, 243, 243);
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+  
+    display: grid;
+    place-content: center;
+  }
+  input[type="radio"] {
+      border-radius: 50%;
+  }
+  
+  input[type="checkbox"]::before, input[type="radio"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #49bf9d;
+}
+  
+  input[type="checkbox"]:checked::before, input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+  
+  input[type="checkbox"]:focus, input[type="radio"]:focus {
+    border-color:  #49bf9d;
+    
+}
+input[type="checkbox"]:hover, input[type="radio"]:hover{
+    cursor: pointer;
+}  
