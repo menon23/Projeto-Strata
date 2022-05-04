@@ -14,6 +14,7 @@ a:hover{
 }
 img{
     max-width: 100%;
+    display: block;
 }
 
 p{
@@ -209,7 +210,36 @@ textarea{
 /*imagens*/
 .imagem-link{
     border: 0;
+    display: block;
+    margin: 10px;
+    position: relative;
 }
+.imagem-link:before{
+    content: '';
+    position: absolute;
+    top: 0; left:0;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    transition: all .5s;
+
+}
+.imagem-link:hover:before{
+    background: rgba(0,0, 0,.5);
+}
+.imagem-link:after{
+    opacity: 0;
+}
+.imagem-link:hover:after{
+    content: 'Veja mais';
+    display: block;
+    position: absolute;
+    color: white;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
 .gallery-img img{
     width: 100%;
     border-radius: 5px;
